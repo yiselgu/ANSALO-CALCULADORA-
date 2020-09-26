@@ -77,7 +77,7 @@ function numerosALetras(numero) {
 }
 
 function pto(){
-    window.location.href ='/assets/pages/calculadora.html';
+    window.location.href ='./assets/pages/calculadora.html';
 }
 
 function reset() {
