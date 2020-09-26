@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: cursive;
+}
+
+.body {
+  color: var(--font-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tema {
+  background: var(--color-secondary);
+  color: var(--font-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+}
+
+.contenido {
+  width: 300px;
+  border: 3px solid black;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  /* background-color: white; */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--font-color);
+}
+
+.es {
+  padding: 5px;
+  text-align: center;
+}
+.campos {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.campos > input {
+  font-size: 18px;
+  padding: 5px 10px;
+  /*  background-color: #fff; */
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button {
+  padding: 4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: 0.4s all;
+  background-color: #fff;
+}
+
+/*-------- Switches------- */
+.label1 {
+  display: flex;
+  justify-content: center;
+
+  margin: 10px auto 0 auto;
+  padding: 3px;
+}
+
+.label-text {
+  margin-left: 16px;
+}
+
+.toggle {
+  isolation: isolate;
+  position: relative;
+  height: 15px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+
+.toggle-state {
+  display: none;
+}
+
+.indicator {
+  height: 100%;
+  width: 200%;
+  background: #1b8be0;
+  border-radius: 15px;
+  transform: translate3d(-75%, 0, 0);
+  transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+  box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
+}
+
+.toggle-state:checked ~ .indicator {
+  transform: translate3d(25%, 0, 0);
+}
+
+/* temas */
+
+.theme-retro {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #ffffff;
+  --background-image: url("../img/oscuro.jpg");
+}
+
+.theme-light {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+ 
+}
+.theme-dark {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #ffffff;  
+  --background-image: url("../img/greed.jpg");
+}

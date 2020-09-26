@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.container .board {
+  background-color: #1F1F1F;
+  height: 105px;
+}
+
+.container .board p {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 65px 5px 0 0;
+  font-family: arial;
+  font-size: 35px;
+  font-weight: 150;
+  color: white;
+}
+
+.container .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.container .buttons button {
+  border: 1px solid #1F1F1F;
+  color: white;
+  padding: 18px;
+  font-size: 18px;
+}
+
+
+.container .buttons .btn-number {
+  background-color: #060606;
+}
+
+.container .buttons .btn-number:hover {
+  background-color: #343534;
+}
+
+.container .buttons .btn-operator {
+  background-color: #131313;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 22px;
+}
+
+.container .buttons .btn-operator:hover {
+  background-color: #343534;
+}
+
+.container .buttons .btn-equal {
+  background-color: #135C61;
+  font-weight: 'Quicksand', sans-serif;
+  font-size: 22px;
+}
+
+.container .buttons .btn-equal:hover {
+  background-color: #07c1e2;
+}
+/*# sourceMappingURL=main.css.map */

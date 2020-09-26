@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---------------------------------- INICIO DE HEAD (ENCABEZADO O LINK)--------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/SOLO EL FENIX.svg" />
+    <link rel="stylesheet" href="./assets/style/ansalo.css">
+    <title>ANSALO-YiselG</title>
+    <script src="./assets/js/ansalo.js"></script>
+
+</head>
+<!------------------------------------ FIN DE HEAD (ENCABEZADO O LINK)----------------------------------------->
+
+<body class="tema">
+
+
+    <div class="contenido">
+        <h2 class="tema">Reto Ansalo</h2>
+
+        <div class="campos">
+            <label>LETRAS</label>
+            <input type="text" id="letrasInput">
+        </div>
+        <div class="campos">
+            <label>NUMEROS</label>
+            <input type="text" id="numerosInput">
+        </div>
+
+        <div>
+            <!-- <label class="label1">
+                <div class="toggle">
+                    <input class="toggle-state" type="checkbox" id="reto" value="check" />
+                    <div class="indicator"></div>
+                </div>
+                <div class="label-text">Activar Tema Reto</div>
+            </label>
+
+            <label class="label1">
+                <div class="toggle">
+                    <input class="toggle-state" type="checkbox" id="oscuro" value="check" />
+                    <div class="indicator"></div>
+                </div>
+                <div class="label-text">Tema Oscuro</div>
+            </label> -->
+
+
+            <label class="label1">
+                <div class="toggle">
+                    <input class="toggle-state"  type="checkbox" id="customSwitch1" onclick="toggleTheme()">
+                    <div class="indicator"></div>
+                </div>
+                <div class="custom-control-label tema" for="customSwitch1">Activar Tema Reto</div>
+            </label>
+
+            <label class="label1">
+                <div class="toggle">
+                    <input class="toggle-state"  type="checkbox" id="customSwitch2" onclick="toggleThemeOscuro()">
+                    <div class="indicator"></div>
+                </div>
+                <div class="custom-control-label tema" for="customSwitch2">Activar Tema Oscuro</div>
+            </label>
+
+        </div>
+        <div class="es">
+            <button id="a1" onclick="imprimirvalor(1)">A-1</button>
+            <button id="b2" onclick="imprimirvalor(2)">B-2</button>
+            <button id="c3" onclick="imprimirvalor(3)">C-3</button>
+        </div>
+        <div class="es">
+            <button id="d4" onclick="imprimirvalor(4)">D-4</button>
+            <button id="e5" onclick="imprimirvalor(5)">E-5</button>
+            <button id="f6" onclick="imprimirvalor(6)">F-6</button>
+        </div>
+        <div class="es">
+            <button id="g7" onclick="imprimirvalor(7)">G-7</button>
+            <button id="h8" onclick="imprimirvalor(8)">H-8</button>
+            <button id="i9" onclick="imprimirvalor(9)">I-9</button>
+        </div>
+
+        <div class="es">
+            <button id="pt" onclick="pto()">.</button>
+            <button id="j-0" onclick="imprimirvalor(10)">J-0</button>
+            <button id="i9" onclick="reset()">reset</button>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
